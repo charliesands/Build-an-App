@@ -64,16 +64,19 @@ namespace Build_An_App
 
         private void button4_Click(object sender, RoutedEventArgs e)
         {
-            int p = 2;
-            for (int q = 2; q < 32;
-            q = q * 2)
+            int count = 0;
+
+            while (count < 10)
             {
-                while (p < q)
-                {
-                    p = p * 2;
-                }
-                q = p - q;
+                count = count + 1;
             }
+
+            for (int i = 0; i < 5; i++)
+            {
+                count = count - 1;
+            }
+
+            myLabel.Text = "The answer is " + count;
         }
     }
 }
